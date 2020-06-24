@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Confucius Retrofit Coroutines</string>
+    <string name="like">like</string>
+    <string name="bookmarks">favorite</string>
+    <string name="share">share</string>
+    <string name="left">back</string>
+    <string name="right">forward</string>
+    <string name="first_page">first page</string>
+    <string name="show_bookmarks">my list</string>
+    <string name="last_page">last page</string>
+    <string name="delete">X</string>
+</resources>

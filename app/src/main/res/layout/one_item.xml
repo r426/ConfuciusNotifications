@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--  Single List Item Design -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/text_in_the_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/background"
+        android:padding="4dp"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="normal">
+    </TextView>
+
+    <!--This LinearLayout around the button was added to fix a RelativeLayout bug (marginBottom isn't working) -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_to_delete_one"
+            android:layout_width="32dp"
+            android:layout_height="36dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/round_shape_button"
+            android:padding="10dp"
+            android:text="@string/delete"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="normal">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Just click on the colourful squares on the left and see what happens-->
+<!--You can play with colours and opacity. A very handy tool-->
+<resources>
+    <color name="colorPrimaryLight">#badaf5</color>
+    <color name="colorPrimary">#0985a7</color>
+    <color name="colorPrimaryDark">#146489</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentLight">#FFC5D9</color>
+    <color name="colorText">#434343</color>
+    <color name="background">#fafafa</color>
+    <color name="colorButton">#0c2eb2c7</color>
+</resources>
