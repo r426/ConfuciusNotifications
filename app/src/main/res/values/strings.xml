@@ -1,12 +1,27 @@
 <resources>
-    <string name="app_name">Confucius Retrofit Coroutines</string>
+    <string name="app_name">Confucius</string>
     <string name="like">like</string>
     <string name="bookmarks">favorite</string>
+    <string name="notifications">daily</string>
     <string name="share">share</string>
-    <string name="left">back</string>
-    <string name="right">forward</string>
+    <string name="alarm_off"></string>
+    <string name="alarm_on"></string>
+    <string name="alarm_on_toast">Set the time for daily notifications</string>
+    <string name="alarm_off_toast">Notifications off</string>
+    <string name="quote_of_the_day">My Quote of the Day</string>
+    <string name="connect_and_start_again">Please connect to the internet</string>
+    <string name="server_error">Server error. Please try later</string>
+    <string name="channel_id">Daily inspirational quotes</string>
+    <string name="channel_description">Sends daily inspirational quotes</string>
+    <string name="delete_from_favorites">Delete the quote from this list?</string>
+    <string name="delete"><font color='#0985a7'>DELETE</font></string>
+    <string name="no"><font color='#0985a7'>NO</font>"</string>
+    <string name="x">X</string>
+    <string name="back">back</string>
+    <string name="previous_page">previous page</string>
+    <string name="next_page">next page</string>
     <string name="first_page">first page</string>
-    <string name="show_bookmarks">my list</string>
     <string name="last_page">last page</string>
-    <string name="delete">X</string>
+    <string name="list_of_favorites">list of favorites</string>
+    <string name="i_like_it">i like it</string>
 </resources>

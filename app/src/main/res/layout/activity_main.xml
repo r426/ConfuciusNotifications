@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ryeslim.confuciusretrofitcoroutines.activities.MainActivity">
+    tools:context="com.ryeslim.confuciusnotifications.activities.MainActivity">
 
     <TextView
-        android:id="@+id/theProverb"
+        android:id="@+id/proverb"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="8dp"
@@ -34,19 +34,19 @@
         <ImageView
             android:id="@+id/previousPage"
             style="@style/SmallIconStyle"
-            android:src="@drawable/ic_chevron_left"
-            android:contentDescription="@string/left"/>
+            android:contentDescription="@string/previous_page"
+            android:src="@drawable/ic_chevron_left" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3" />
+            android:layout_weight="4" />
 
         <ImageView
             android:id="@+id/nextPage"
             style="@style/SmallIconStyle"
-            android:src="@drawable/ic_chevron_right"
-            android:contentDescription="@string/right"/>
+            android:contentDescription="@string/next_page"
+            android:src="@drawable/ic_chevron_right" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,6 +66,11 @@
             android:text="@string/bookmarks" />
 
         <TextView
+            android:id="@+id/notifications"
+            style="@style/SmallWordStyle"
+            android:text="@string/notifications" />
+
+        <TextView
             style="@style/SmallWordStyle"
             android:text="@string/share" />
 
@@ -82,31 +87,49 @@
         <ImageView
             android:id="@+id/firstPage"
             style="@style/SmallIconStyle"
-            android:src="@drawable/ic_first_page"
-            android:contentDescription="@string/first_page"/>
+            android:contentDescription="@string/first_page"
+            android:src="@drawable/ic_first_page" />
 
         <ImageView
             android:id="@+id/heart"
             style="@style/SmallIconStyle"
-            android:src="@drawable/ic_favorite_border"
-            android:contentDescription="@string/like"/>
+            android:contentDescription="@string/i_like_it"
+            android:src="@drawable/ic_favorite_border" />
 
         <ImageView
             android:id="@+id/showBookmarks"
             style="@style/SmallIconStyle"
-            android:src="@drawable/ic_dehaze"
-            android:contentDescription="@string/show_bookmarks"/>
+            android:contentDescription="@string/list_of_favorites"
+            android:src="@drawable/ic_dehaze" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            style="@style/SmallIconStyle">
+
+            <ToggleButton
+                android:id="@+id/check_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_selector"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
             android:id="@+id/share"
             style="@style/SmallIconStyle"
-            android:src="@drawable/ic_share"
-            android:contentDescription="@string/share"/>
+            android:contentDescription="@string/share"
+            android:src="@drawable/ic_share" />
 
         <ImageView
             android:id="@+id/lastPage"
             style="@style/SmallIconStyle"
-            android:src="@drawable/ic_last_page"
-            android:contentDescription="@string/last_page"/>
+            android:contentDescription="@string/last_page"
+            android:src="@drawable/ic_last_page" />
     </LinearLayout>
 </LinearLayout>

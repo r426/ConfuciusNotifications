@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ryeslim.confuciusretrofitcoroutines">
+    package="com.ryeslim.confuciusnotifications">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,8 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <receiver
+            android:name="com.ryeslim.confuciusnotifications.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
 
-        <activity android:name="com.ryeslim.confuciusretrofitcoroutines.activities.MainActivity">
+        <activity android:name="com.ryeslim.confuciusnotifications.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,14 +26,11 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-        <activity android:name="com.ryeslim.confuciusretrofitcoroutines.activities.RecyclerViewActivity" />
+        <activity android:name="com.ryeslim.confuciusnotifications.activities.RecyclerViewActivity" />
 
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-
     </application>
+
 </manifest>

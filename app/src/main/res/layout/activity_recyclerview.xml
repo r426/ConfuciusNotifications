@@ -6,7 +6,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.ryeslim.confuciusretrofitcoroutines.activities.RecyclerViewActivity">
+              tools:context="com.ryeslim.confuciusnotifications.activities.RecyclerViewActivity">
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
@@ -32,7 +32,7 @@
                 android:layout_weight="1"
                 android:onClick="carryOn"
                 android:src="@drawable/ic_chevron_left"
-                android:contentDescription="@string/left"/>
+                android:contentDescription="@string/back"/>
 
         <View
                 android:layout_width="0dp"
