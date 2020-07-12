@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
             } else if (isOnline()) {
                 launch {
                     // downloads the list of all quotes
-                    AllProverbs.instance!!.fetchProverb()
+                    AllProverbs.instance!!.fetchProverbs()
                 }
             } else if (!AllProverbs.instance!!.quoteFileReadable()) {
                 errorMessage(getString(R.string.connect_and_start_again))
@@ -131,12 +131,9 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
             notifications!!.setText(R.string.notifications)
         }
 
-
         notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
 
         val notifyButton: ToggleButton = findViewById(R.id.check_state)
-
-        // Set up the Notification Broadcast Intent.
 
         // Set up the Notification Broadcast Intent.
         val notifyIntent = Intent(this, AlarmReceiver::class.java)
@@ -154,8 +151,6 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
         )
 
         val alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
-
-        // Set the click listener for the toggle button.
 
         // Set the click listener for the toggle button.
         notifyButton.setOnCheckedChangeListener { buttonView, isChecked ->

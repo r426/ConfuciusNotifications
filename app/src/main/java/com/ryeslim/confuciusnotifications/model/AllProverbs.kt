@@ -29,7 +29,7 @@ class AllProverbs private constructor() {
             return result
         }
 
-    suspend fun fetchProverb() {
+    suspend fun fetchProverbs() {
         var response: retrofit2.Response<List<Proverb>>? = null
         try {
             withContext(Dispatchers.IO) {
