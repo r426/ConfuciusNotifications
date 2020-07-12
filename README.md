@@ -1,6 +1,6 @@
 # Confucius
 
-In the app the user can read inspirational quotes shown in a random order, share them, save the favorites into a list and receive daily notifications with a random quote.
+In this Android app the user can read inspirational quotes shown in a random order, share them, save the favorites into a list and receive daily notifications with a random quote.
 
 Features and UI:
 * Navigation between pages using arrows or swiping / clicking the quotes;
