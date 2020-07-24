@@ -61,10 +61,7 @@ private constructor() {
 
     val thePrevious: Proverb
         get() {
-            index--
-            if (index < 0) {
-                index = currentList.size - 1
-            }
+            if (index > 0) index--
             return currentList[index]
         }
 
